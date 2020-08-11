@@ -1,0 +1,9 @@
+[submodule "modules/libedi"]
+	path = modules/libedi
+	url = https://github.com/freight-trust/libedi
+[submodule "modules/X12solidity"]
+	path = modules/X12solidity
+	url = https://github.com/freight-trust/X12solidity
+[submodule "modules/besu-connect"]
+	path = modules/besu-connect
+	url = https://github.com/freight-trust/node
