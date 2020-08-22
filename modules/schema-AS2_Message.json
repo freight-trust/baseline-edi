@@ -1,0 +1,800 @@
+{
+  "schema": {
+    "element": {
+      "complexType": {
+        "sequence": {
+          "element": [
+            {
+              "complexType": {
+                "sequence": {
+                  "element": [
+                    {
+                      "_name": "SenderID",
+                      "_type": "xs:string",
+                      "_minOccurs": "1",
+                      "_maxOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "_name": "RecipientID",
+                      "_type": "xs:string",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "_name": "Prepared",
+                      "_type": "xs:dateTime",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "_name": "MessageID",
+                      "_type": "xs:string",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "_name": "MessageType",
+                      "_type": "xs:string",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "_name": "MessageVersion",
+                      "_type": "xs:string",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "1",
+                      "__prefix": "xs"
+                    }
+                  ],
+                  "__prefix": "xs"
+                },
+                "__prefix": "xs"
+              },
+              "_name": "MessageHeader",
+              "_maxOccurs": "1",
+              "_minOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "complexType": {
+                "sequence": {
+                  "element": [
+                    {
+                      "complexType": {
+                        "sequence": {
+                          "element": [
+                            {
+                              "_name": "Party",
+                              "_type": "Party",
+                              "_maxOccurs": "3",
+                              "_minOccurs": "1",
+                              "__prefix": "xs"
+                            },
+                            {
+                              "_name": "CarrierCode",
+                              "_type": "xs:string",
+                              "_minOccurs": "0",
+                              "_maxOccurs": "1",
+                              "__prefix": "xs"
+                            }
+                          ],
+                          "__prefix": "xs"
+                        },
+                        "__prefix": "xs"
+                      },
+                      "_name": "ManifestHeader",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "0",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "complexType": {
+                        "sequence": {
+                          "element": {
+                            "complexType": {
+                              "sequence": {
+                                "element": [
+                                  {
+                                    "_name": "ConsignmentNo",
+                                    "_type": "xs:string",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "Version",
+                                    "_type": "Version",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "ConsignmentDate",
+                                    "_type": "xs:date",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "MovementType",
+                                    "_type": "xs:string",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "Party",
+                                    "_type": "Party",
+                                    "_maxOccurs": "3",
+                                    "_minOccurs": "1",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "Reference",
+                                    "_type": "Reference",
+                                    "_minOccurs": "0",
+                                    "_maxoccurs": "3",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "VIPEmail",
+                                    "_type": "xs:string",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "Items",
+                                            "_type": "xs:int",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "PackageType",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Description",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Measurement",
+                                            "_type": "Measurement",
+                                            "_minOccurs": "0",
+                                            "_maxOccurs": "2",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "DangerousGoods",
+                                            "_type": "DangerousGoods",
+                                            "_minOccurs": "0",
+                                            "_maxOccurs": "1",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Dimensions",
+                                            "_type": "Dimensions",
+                                            "_minOccurs": "0",
+                                            "_maxOccurs": "1",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "CommodityCode",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Marks",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "complexType": {
+                                              "sequence": {
+                                                "element": [
+                                                  {
+                                                    "_name": "Items",
+                                                    "_type": "xs:int",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Description",
+                                                    "_type": "xs:string",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Measurement",
+                                                    "_type": "Measurement",
+                                                    "_minOccurs": "0",
+                                                    "_maxOccurs": "2",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "DangerousGoods",
+                                                    "_type": "DangerousGoods",
+                                                    "_minOccurs": "0",
+                                                    "_maxOccurs": "1",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Dimensions",
+                                                    "_type": "Dimensions",
+                                                    "_minOccurs": "0",
+                                                    "_maxOccurs": "1",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Marks",
+                                                    "_type": "xs:string",
+                                                    "_minOccurs": "0",
+                                                    "__prefix": "xs"
+                                                  }
+                                                ],
+                                                "__prefix": "xs"
+                                              },
+                                              "__prefix": "xs"
+                                            },
+                                            "_name": "SaidToContain",
+                                            "_minOccurs": "0",
+                                            "_maxOccurs": "59",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "Line",
+                                    "_minOccurs": "1",
+                                    "_maxOccurs": "60",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "HireCompany",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "HireType",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "HireAccount",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "EquipmentType",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Quantity",
+                                            "_type": "xs:int",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "Hire",
+                                    "_minOccurs": "0",
+                                    "_maxOccurs": "1",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "Required",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "1",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "BookInFrom",
+                                            "_type": "xs:dateTime",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "BookInTo",
+                                            "_type": "xs:dateTime",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Comment",
+                                            "_type": "xs:string",
+                                            "_minOccurs": "0",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "Booking",
+                                    "_minOccurs": "0",
+                                    "_maxOccurs": "1",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "ContractType",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "DeclaredValue",
+                                            "_type": "xs:double",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "Contract",
+                                    "_minOccurs": "0",
+                                    "_maxOccurs": "1",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "ServiceRequired",
+                                    "_type": "xs:string",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "Cost",
+                                    "_type": "xs:double",
+                                    "_minOccurs": "0",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "Reference",
+                                            "_type": "Reference",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "State",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "DGClass",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "Freman",
+                                    "_minOccurs": "0",
+                                    "_maxOccurs": "1",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "_name": "Total",
+                                    "_type": "Total",
+                                    "_minOccurs": "1",
+                                    "_maxOccurs": "3",
+                                    "__prefix": "xs"
+                                  },
+                                  {
+                                    "complexType": {
+                                      "sequence": {
+                                        "element": [
+                                          {
+                                            "_name": "PackingSlipDate",
+                                            "_type": "xs:date",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Party",
+                                            "_type": "Party",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Reference",
+                                            "_type": "Reference",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "Instructions",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "_name": "PrintUnitPrice",
+                                            "_type": "xs:string",
+                                            "__prefix": "xs"
+                                          },
+                                          {
+                                            "complexType": {
+                                              "sequence": {
+                                                "element": [
+                                                  {
+                                                    "_name": "ShippedQuantity",
+                                                    "_type": "xs:int",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Unit",
+                                                    "_type": "xs:string",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Description",
+                                                    "_type": "xs:string",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "ItemNumber",
+                                                    "_type": "xs:string",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "UnitPrice",
+                                                    "_type": "xs:double",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "BackOrderQuantity",
+                                                    "_type": "xs:int",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "CustomerSKU",
+                                                    "_type": "xs:string",
+                                                    "__prefix": "xs"
+                                                  },
+                                                  {
+                                                    "_name": "Message",
+                                                    "_type": "xs:string",
+                                                    "_maxOccurs": "2",
+                                                    "__prefix": "xs"
+                                                  }
+                                                ],
+                                                "__prefix": "xs"
+                                              },
+                                              "__prefix": "xs"
+                                            },
+                                            "_name": "PackingSlipDetail",
+                                            "__prefix": "xs"
+                                          }
+                                        ],
+                                        "__prefix": "xs"
+                                      },
+                                      "__prefix": "xs"
+                                    },
+                                    "_name": "PackingSlip",
+                                    "_minOccurs": "0",
+                                    "_maxOccurs": "1",
+                                    "__prefix": "xs"
+                                  }
+                                ],
+                                "__prefix": "xs"
+                              },
+                              "__prefix": "xs"
+                            },
+                            "_name": "Consignment",
+                            "_minOccurs": "1",
+                            "_maxOccurs": "unbounded",
+                            "__prefix": "xs"
+                          },
+                          "__prefix": "xs"
+                        },
+                        "__prefix": "xs"
+                      },
+                      "_name": "Consignments",
+                      "_minOccurs": "1",
+                      "_maxOccurs": "1",
+                      "__prefix": "xs"
+                    },
+                    {
+                      "complexType": {
+                        "sequence": {
+                          "element": {
+                            "_name": "Total",
+                            "_type": "Total",
+                            "_minOccurs": "1",
+                            "_maxOccurs": "1",
+                            "__prefix": "xs"
+                          },
+                          "__prefix": "xs"
+                        },
+                        "__prefix": "xs"
+                      },
+                      "_name": "ControlTotal",
+                      "_maxOccurs": "1",
+                      "_minOccurs": "0",
+                      "__prefix": "xs"
+                    }
+                  ],
+                  "__prefix": "xs"
+                },
+                "__prefix": "xs"
+              },
+              "_name": "MessageBody",
+              "_maxOccurs": "1",
+              "_minOccurs": "1",
+              "__prefix": "xs"
+            }
+          ],
+          "__prefix": "xs"
+        },
+        "__prefix": "xs"
+      },
+      "_name": "Message",
+      "__prefix": "xs"
+    },
+    "simpleType": [
+      {
+        "restriction": {
+          "_base": "xs:string",
+          "__prefix": "xs"
+        },
+        "_name": "string",
+        "__prefix": "xs"
+      },
+      {
+        "restriction": {
+          "_base": "xs:int",
+          "__prefix": "xs"
+        },
+        "_name": "int",
+        "__prefix": "xs"
+      },
+      {
+        "restriction": {
+          "_base": "xs:double",
+          "__prefix": "xs"
+        },
+        "_name": "double",
+        "__prefix": "xs"
+      },
+      {
+        "restriction": {
+          "_base": "xs:string",
+          "__prefix": "xs"
+        },
+        "_name": "Role",
+        "__prefix": "xs"
+      }
+    ],
+    "complexType": [
+      {
+        "sequence": {
+          "element": [
+            {
+              "_name": "Code",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Name",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Address1",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Address2",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Suburb",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "City",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "State",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "PostCode",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Phone",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "_maxOccurs": "1",
+              "__prefix": "xs"
+            }
+          ],
+          "__prefix": "xs"
+        },
+        "attribute": {
+          "_name": "Role",
+          "_type": "Role",
+          "__prefix": "xs"
+        },
+        "_name": "Party",
+        "__prefix": "xs"
+      },
+      {
+        "simpleContent": {
+          "extension": {
+            "attribute": {
+              "_name": "Units",
+              "_type": "xs:string",
+              "__prefix": "xs"
+            },
+            "_base": "double",
+            "__prefix": "xs"
+          },
+          "__prefix": "xs"
+        },
+        "_name": "Total",
+        "__prefix": "xs"
+      },
+      {
+        "simpleContent": {
+          "extension": {
+            "attribute": {
+              "_name": "Role",
+              "_type": "Role",
+              "__prefix": "xs"
+            },
+            "_base": "string",
+            "__prefix": "xs"
+          },
+          "__prefix": "xs"
+        },
+        "_name": "Reference",
+        "__prefix": "xs"
+      },
+      {
+        "sequence": {
+          "element": [
+            {
+              "_name": "Value",
+              "_type": "xs:double",
+              "_minOccurs": "0",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Unit",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "__prefix": "xs"
+            }
+          ],
+          "__prefix": "xs"
+        },
+        "attribute": {
+          "_name": "Property",
+          "_type": "xs:string",
+          "__prefix": "xs"
+        },
+        "_name": "Measurement",
+        "__prefix": "xs"
+      },
+      {
+        "sequence": {
+          "element": [
+            {
+              "_name": "DGClass",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "UNNumber",
+              "_type": "xs:string",
+              "_minOccurs": "0",
+              "__prefix": "xs"
+            }
+          ],
+          "__prefix": "xs"
+        },
+        "_name": "DangerousGoods",
+        "__prefix": "xs"
+      },
+      {
+        "sequence": {
+          "element": [
+            {
+              "_name": "Quantity",
+              "_type": "xs:int",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Length",
+              "_type": "xs:double",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Width",
+              "_type": "xs:double",
+              "__prefix": "xs"
+            },
+            {
+              "_name": "Height",
+              "_type": "xs:double",
+              "__prefix": "xs"
+            }
+          ],
+          "__prefix": "xs"
+        },
+        "_name": "Dimensions",
+        "__prefix": "xs"
+      },
+      {
+        "simpleContent": {
+          "extension": {
+            "attribute": {
+              "_name": "Function",
+              "_type": "xs:string",
+              "__prefix": "xs"
+            },
+            "_base": "int",
+            "__prefix": "xs"
+          },
+          "__prefix": "xs"
+        },
+        "_name": "Version",
+        "__prefix": "xs"
+      }
+    ],
+    "_xmlns:xs": "http://www.w3.org/2001/XMLSchema",
+    "__prefix": "xs"
+  }
+}
+ 
